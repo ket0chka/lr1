@@ -1,7 +1,7 @@
 package my_package;
 public class ArabicCalcs extends Calculator {
     public ArabicCalcs(int number1, int number2) {
-        super(number1,number2);
+        super(number1, number2);
     }
 
     @Override
@@ -21,8 +21,11 @@ public class ArabicCalcs extends Calculator {
 
     @Override
     public int division() {
+        if (number2 == 0) {
+            return -1;
+        }
         return number1 / number2;
     }
-    }
+}
 
 
