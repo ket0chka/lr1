@@ -24,5 +24,5 @@ public class ArabicCalcs extends Calculator {
         return number1 / number2;
     }
     }
-//
+
 
